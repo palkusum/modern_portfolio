@@ -158,6 +158,35 @@ main{
     color: #000;
 }
 
+
+// Contact Page
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 1rem;
+
+    div {
+        font-size: 1rem;
+        border: 3px solid #fff;
+        padding: 0.8rem 1.8rem;
+        margin-bottom: 2rem;
+        @include easeOut;
+
+        &:hover {
+            padding: 0.3rem 0.8rem; 
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+
+            span {
+                color: set-text-color($secondary-color);
+            }
+        }
+    }
+}
+
+
 #main-footer {
     text-align: center;
     padding: 1rem;
